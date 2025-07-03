@@ -1,0 +1,8 @@
+ETL Project Steps:
+1. log_progress("...")
+2. df = extract(url, table_attribs)
+3. df = transform(df, csv_path)
+4. load_to_csv(df, output_path)
+5. conn = sqlite3.connect("Banks.db")
+6. load_to_db(df, conn, table_name)
+7. run_queries(...), conn.close()
